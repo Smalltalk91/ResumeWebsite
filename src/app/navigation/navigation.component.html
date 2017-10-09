@@ -1,11 +1,7 @@
-<ul>
-    <li>
-        <a>Home</a>
-    </li>
-    <li>
-        <a>About</a>
-    </li>
-    <li>
-        <a>Contact</a>
-    </li>
-</ul>
+<div class = 'nav-bar'>
+  <ul class = 'nav-menu'>
+      <li class='nav-elements' *ngFor="let menu_item of menu_items">
+        <a class='nav-element'>{{menu_item}}</a>
+      </li>
+  </ul>
+</div>

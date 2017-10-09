@@ -1,4 +1,4 @@
-app-navigation {
+.nav-bar {
   display: inline-block;
   width: 100%;
   font-size: 0;
@@ -9,23 +9,31 @@ app-navigation {
   color: #FFFFFF;
 }
 
-app-navigation,
-app-navigation ul {
+.nav-bar,
+.nav-menu {
   margin: 0;
   padding: 0;
 }
 
-app-navigation ul li {
+.nav-bar .nav-menu .nav-elements {
   display: inline;
   float: left;
-  margin: 0 5px;
+  margin: 0 5px 0 0;
 }
 
-app-navigation ul li a {
+.nav-bar .nav-menu .nav-elements .nav-element {
   display: block;
   font-size: 16px;
   line-height: normal;
   text-align: center;
   color: #ffffff;
   padding: 15px 20px;
+}
+
+.nav-bar .nav-menu .nav-elements .nav-element:hover {
+  background: #FFFFFF;
+  color: #010000;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
